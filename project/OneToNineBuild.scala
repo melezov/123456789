@@ -21,9 +21,12 @@ object BuildSettings {
 object Dependencies {
   import Implicits._
 
+  val twitterEval = "com.twitter" %% "util-eval" % "1.12.9"
+  
   val scalaTest = "org.scalatest" %% "scalatest" % "1.6.1" % "test"
  
   val depsOneToNine = libDeps(
+    twitterEval,
     //test
     scalaTest
   )
